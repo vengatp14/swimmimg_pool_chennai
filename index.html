@@ -1,11 +1,829 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Work under construction </h1>
-</body>
+
+    <head>
+        <meta charset="utf-8">
+        <title>Raj Swimming class - Water Park </title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-fluid nav-bar sticky-top px-4 py-2 py-lg-0">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a href="" class="navbar-brand p-0">
+                    <h1 class="display-6 text-dark"><img src="img/raj_swimmimg_classes.svg" alt="Logo"></h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav mx-auto py-0">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="service.html" class="nav-item nav-link">Service</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Product and Details</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="Products.html" class="dropdown-item">Products</a>
+                                <a href="gallery.html" class="dropdown-item">Our Gallery</a>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <div class="team-icon d-none d-xl-flex justify-content-center me-3">
+                        <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <a href="#" class="btn btn-primary rounded-pill py-2 px-4 flex-shrink-0">Get Started</a>
+                </div>
+            </nav>
+        </div>
+        <!-- Navbar & Hero End -->
+
+        <!-- Carousel Start -->
+        <div class="header-carousel owl-carousel">
+            <div class="header-carousel-item">
+                <img src="img/simming_pool.jpg" class="img-fluid w-100" alt="Image">
+                <div class="carousel-caption">
+                    <div class="container align-items-center py-4">
+                        <div class="row g-5 align-items-center">
+                            <div class="col-xl-7 fadeInLeft animated" data-animation="fadeInLeft" data-delay="1s" style="animation-delay: 1s;">
+                                <div class="text-start">
+                                    <h4 class="text-primary text-uppercase fw-bold mb-4">🌊 Welcome to Raj Swimming Coaching</h4>
+                                    <h4 class="text-danger"><b>Dive into Excellence with Our Expert Swim Training</b></h4>
+                                    <!-- <h1 class="display-4 text-uppercase text-white mb-4">The Biggest Theme & Amusement Park</h1> -->
+                                    <p class="mb-4 fs-5">At Raj Swimming Coaching, we offer professional swim training for all ages and skill levels. Whether you’re a beginner learning the basics, an advanced swimmer improving your technique, or a special needs child seeking therapeutic benefits, our certified coaches are here to guide you every step of the way.
+                                    </p>
+                                    <div class="d-flex flex-shrink-0">
+                                        <a class="btn btn-primary rounded-pill text-white py-3 px-5" href="#">Our Packages</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-5 fadeInRight animated" data-animation="fadeInRight" data-delay="1s" style="animation-delay: 1s;">
+                                <div class="ticket-form p-5">
+                                    <h2 class="text-dark text-uppercase mb-4">book your Trainer</h2>
+                                    <form action="">
+                                        <div class="row g-4">
+                                            <div class="col-12">
+                                                <input type="text" class="form-control border-0 py-2" id="name" placeholder="Your Name" required>
+                                            </div>
+                                            <div class="col-12 col-xl-6">
+                                                <input type="email" class="form-control border-0 py-2" id="email" placeholder="Your Email" required>
+                                            </div>
+                                            <div class="col-12 col-xl-6">
+                                                <input type="phone" class="form-control border-0 py-2" id="phone" placeholder="Phone" required>
+                                            </div>
+                                            <div class="col-12">
+                                                <select class="form-select border-0 py-2" aria-label="Default select example" required>
+                                                    <option selected disabled>Select Packages</option>
+                                                    <option value="Single Package">Single Package</option>
+                                                    <option value="Sibling Packages">Sibling Packages</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-12">
+                                                <input class="form-control border-0 py-2" type="date" required>
+                                            </div>
+                                            <div class="col-12">
+                                                <button type="submit" class="btn btn-primary w-100 py-2 px-5">Book Now</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel End -->
+
+
+        <!-- Feature Start -->
+        <div class="container-fluid feature py-5">
+            <div class="container py-5">
+                <div class="row g-4">
+                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="feature-item">
+                            <img src="./img/pool_type/1.jpg" class="img-fluid rounded w-100" alt="Image">
+                            <div class="feature-content p-4">
+                                <div class="feature-content-inner">
+                                    <h4 class="text-white">🏊 Beginner-Friendly Pools</h4>
+                                    <p class="text-white">Perfect for new swimmers, our shallow and safe pools provide the ideal environment for learning and building water confidence. Our expert instructors ensure a comfortable and enjoyable experience.
+                                    </p>
+                                    <a href="#" class="btn btn-primary rounded-pill py-2 px-4">Read More <i class="fa fa-arrow-right ms-1"></i></a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="feature-item">
+                            <img src="./img/pool_type/2.jpg" class="img-fluid rounded w-100" alt="Image">
+                            <div class="feature-content p-4">
+                                <div class="feature-content-inner">
+                                    <h4 class="text-white">🌟 Advanced Training Pools</h4>
+                                    <p class="text-white">For skilled swimmers, we offer deeper pools with dedicated lanes for advanced training and endurance practice. Enhance your technique with professional coaching and structured sessions.
+                                    </p>
+                                    <a href="#" class="btn btn-primary rounded-pill py-2 px-4">Read More <i class="fa fa-arrow-right ms-1"></i></a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="feature-item">
+                            <img src="./img/pool_type/3.jpg" class="img-fluid rounded w-100" alt="Image">
+                            <div class="feature-content p-4">
+                                <div class="feature-content-inner">
+                                    <h4 class="text-white">👶 Kids' Splash Pools</h4>
+                                    <p class="text-white">Specially designed for children, our shallow splash pools ensure a safe and fun water play experience. Kids can enjoy water games and build their swimming skills under expert supervision.
+                                    </p>
+                                    <a href="#" class="btn btn-primary rounded-pill py-2 px-4">Read More <i class="fa fa-arrow-right ms-1"></i></a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Feature End -->
+
+        <!-- About Start -->
+        <div class="container-fluid about pb-5">
+            <div class="container pb-5">
+                <div class="row g-5">
+                    <div class="col-xl-6 wow fadeInUp" data-wow-delay="0.2s">
+                        <div>
+                            <!-- <h4 class="text-primary"></h4> -->
+                            <h1 class="display-5 mb-4">🌊 About Raj Swimming Class</h1>
+                            <p class="mb-5">Dive into Fun & Fitness! At Raj Swimming Class, we offer a premier swimming experience for all ages and skill levels. With over 20 years of expertise, we provide top-notch facilities, certified trainers, and a safe, hygienic environment to help you master swimming while having fun.
+                            </p>
+                            <div class="row g-4">
+                                <!-- Swimming Suit & Goggles -->
+                                <div class="col-md-6 animated">
+                                    <div class="icon-box h-100">
+                                        <i class="fas fa-swimmer bounce-icon"></i>
+                                        <div>
+                                            <h4>Swimming Suits & Goggles</h4>
+                                            <p>Get high-quality swimming suits and goggles for a comfortable and safe swim.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                <!-- Many Attractions -->
+                                <div class="col-md-6 animated">
+                                    <div class="icon-box h-100">
+                                        <i class="fas fa-water bounce-icon"></i>
+                                        <div>
+                                            <h4>Relax & Enjoy</h4>
+                                            <p>Enjoy a refreshing swim with our clean and safe pool environment.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                <!-- Affordable Price -->
+                                <div class="col-md-6 animated">
+                                    <div class="icon-box h-100">
+                                        <i class="fas fa-wallet bounce-icon"></i>
+                                        <div>
+                                            <h4>Affordable Price</h4>
+                                            <p>We offer competitive rates with flexible membership plans for all.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                <!-- Safety Lockers -->
+                                <div class="col-md-6 animated">
+                                    <div class="icon-box h-100">
+                                        <i class="fas fa-lock bounce-icon"></i>
+                                        <div>
+                                            <h4>Safety Lockers</h4>
+                                            <p>Keep your belongings safe with our secure locker facilities.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="position-relative rounded">
+                            <div class="rounded" style="margin-top: 40px;">
+                                <div class="row g-0">
+                                    <div class="col-lg-12">
+                                        <div class="rounded mb-4">
+                                            <img src="img/Untitled design (4).jpg" class="img-fluid rounded w-100" alt="">
+                                        </div>
+                                        <div class="row gx-4 gy-0">
+                                            <!-- Crystal Clear Pools -->
+                                            <div class="col-6 my-2">
+                                                <div class="counter-item bg-primary rounded text-center p-4 h-100">
+                                                    <div class="counter-item-icon mx-auto mb-3">
+                                                        <i class="fas fa-water fa-3x text-white"></i>
+                                                    </div>
+                                                    <div class="counter-counting mb-3">
+                                                        <span class="text-white fs-2 fw-bold" data-toggle="counter-up">10</span>
+                                                        <span class="h1 fw-bold text-white">+</span>
+                                                    </div>
+                                                    <h5 class="text-white mb-0">Crystal Clear Pools</h5>
+                                                </div>
+                                            </div>
+                                        
+                                            <!-- Happy Swimmers -->
+                                            <div class="col-6 my-2">
+                                                <div class="counter-item bg-dark rounded text-center p-4 h-100">
+                                                    <div class="counter-item-icon mx-auto mb-3">
+                                                        <i class="fas fa-smile-beam fa-3x text-white"></i>
+                                                    </div>
+                                                    <div class="counter-counting mb-3">
+                                                        <span class="text-white fs-2 fw-bold" data-toggle="counter-up">50</span>
+                                                        <span class="h1 fw-bold text-white">K +</span>
+                                                    </div>
+                                                    <h5 class="text-white mb-0">Happy Swimmers</h5>
+                                                </div>
+                                            </div>
+                                        
+                                            <!-- Certified Lifeguards -->
+                                            <div class="col-6 my-2">
+                                                <div class="counter-item bg-dark rounded text-center p-4 h-100">
+                                                    <div class="counter-item-icon mx-auto mb-3">
+                                                        <i class="fas fa-shield-alt fa-3x text-white"></i>
+                                                    </div>
+                                                    <div class="counter-counting mb-3">
+                                                        <span class="text-white fs-2 fw-bold" data-toggle="counter-up">15</span>
+                                                        <span class="h1 fw-bold text-white">+</span>
+                                                    </div>
+                                                    <h5 class="text-white mb-0">Certified Lifeguards</h5>
+                                                </div>
+                                            </div>
+                                        
+                                            <!-- Successful Events -->
+                                            <div class="col-6 my-2">
+                                                <div class="counter-item bg-primary rounded text-center p-4 h-100">
+                                                    <div class="counter-item-icon mx-auto mb-3">
+                                                        <i class="fas fa-calendar-check fa-3x text-white"></i>
+                                                    </div>
+                                                    <div class="counter-counting mb-3">
+                                                        <span class="text-white fs-2 fw-bold" data-toggle="counter-up">120</span>
+                                                        <span class="h1 fw-bold text-white">+</span>
+                                                    </div>
+                                                    <h5 class="text-white mb-0">Successful Events</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rounded bg-primary p-4 position-absolute d-flex justify-content-center" style="width: 90%; height: 80px; top: -40px; left: 50%; transform: translateX(-50%);">
+                                <h3 class="mb-0 text-white">20+ Years Experiance</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+
+        <!-- Service Start -->
+        <div class="container-fluid service py-5">
+            <div class="container service-section py-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-primary">Our Service</h4>
+                    <h1 class="display-5 text-white mb-4">Explore Raj Swimming class</h1>
+                    <p class="mb-0 text-white">Dive into excellence with Raj Swimming Classes! Whether you’re a beginner or an advanced swimmer, our certified instructors offer personalized training to help you enhance your skills. Enjoy a safe, clean, and family-friendly environment with top-notch facilities. Join us and make a splash towards fitness and fun!
+                    </p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-0 col-md-1 col-lg-2 col-xl-2"></div>
+                    <div class="col-md-10 col-lg-8 col-xl-8 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="service-days p-4">
+                            <div class="py-2 border-bottom border-top d-flex align-items-center justify-content-between flex-wrap"><h4 class="mb-0 pb-2 pb-sm-0">Monday - Friday</h4> <p class="mb-0"><i class="fas fa-clock text-primary me-2"></i>11:00 AM - 16:00 PM</p></div>
+                            <div class="py-2 border-bottom d-flex align-items-center justify-content-between flex-shrink-1 flex-wrap"><h4 class="mb-0 pb-2 pb-sm-0">Saturday - Sunday</h4> <p class="mb-0"><i class="fas fa-clock text-primary me-2"></i>09:00 AM - 17:00 PM</p></div>
+                        </div>
+                    </div>
+                    <div class="col-0 col-md-1 col-lg-2 col-xl-2"></div>
+
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="service-item p-4">
+                            <div class="service-content">
+                                <div class="mb-4">
+                                    <i class="fas fa-water fa-4x"></i>
+                                </div>
+                                <a href="#" class="h4 d-inline-block mb-3">Crystal-Clear Pool</a>
+                                <p class="mb-0">Enjoy swimming in our clean and hygienic pool, regularly maintained for your safety and comfort.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="service-item p-4">
+                            <div class="service-content">
+                                <div class="mb-4">
+                                    <i class="fas fa-shower fa-4x"></i>
+                                </div>
+                                <a href="#" class="h4 d-inline-block mb-3">Shower & Changing Rooms</a>
+                                <p class="mb-0">Clean and spacious shower and changing rooms available for your convenience and privacy.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="service-item p-4">
+                            <div class="service-content">
+                                <div class="mb-4">
+                                    <i class="fas fa-life-ring fa-4x"></i>
+                                </div>
+                                <a href="#" class="h4 d-inline-block mb-3">Certified Lifeguards</a>
+                                <p class="mb-0">Our experienced lifeguards ensure your safety, giving you peace of mind while you enjoy the water.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                        <div class="service-item p-4">
+                            <div class="service-content">
+                                <div class="mb-4">
+                                    <i class="fas fa-umbrella-beach fa-4x"></i>
+                                </div>
+                                <a href="#" class="h4 d-inline-block mb-3">Relaxing Sun Deck</a>
+                                <p class="mb-0">Unwind and soak up the sun on our comfortable deck with shaded seating areas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Service End -->
+
+
+        <!-- Ticket Packages Start -->
+        <div class="container-fluid py-5">
+            <div class="container py-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-12 col-xl-4 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="packages-item h-100">
+                            <h4 class="text-primary">Membership Plans</h4>
+                            <h1 class="display-5 mb-4">Choose The Best Plan For Your Needs</h1>
+                            <p class="mb-4">Enjoy exclusive access to our premium facilities with tailored membership plans for individuals and families. Unlock exciting benefits, special offers, and a range of amenities designed to enhance your experience.</p>
+                            <p><i class="fa fa-check text-primary me-2"></i>Unlimited Access to All Facilities</p>
+                            <p><i class="fa fa-check text-primary me-2"></i>Flexible Membership Options</p>
+                            <p><i class="fa fa-check text-primary me-2"></i>Special Discounts on Events</p>
+                            <p class="mb-5"><i class="fa fa-check text-primary me-2"></i>Priority Booking & Exclusive Perks</p>
+                            <a href="#" class="btn btn-primary rounded-pill py-3 px-5">Join Now</a>
+                        </div>
+                    </div>
+        
+                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="pricing-item bg-dark rounded text-center p-5 h-100">
+                            <div class="pb-4 border-bottom">
+                                <h2 class="mb-4 text-primary">Monthly Membership</h2>
+                                <p class="mb-4">Perfect for individuals looking for flexible access with all essential benefits.</p>
+                                <h2 class="mb-0 text-primary">₹4000<span class="text-body fs-5 fw-normal">/month</span></h2>
+                            </div>
+                            <div class="py-4">
+                                <p class="mb-4"><i class="fa fa-check text-primary me-2"></i>Unlimited Access to Facilities</p>
+                                <p class="mb-4"><i class="fa fa-check text-primary me-2"></i>Free Fitness Classes</p>
+                                <p class="mb-4"><i class="fa fa-check text-primary me-2"></i>Access to Locker Rooms</p>
+                                <p class="mb-4"><i class="fa fa-check text-primary me-2"></i>Complimentary Towels</p>
+                                <p class="mb-4"><i class="fa fa-check text-primary me-2"></i>Discounts on Special Events</p>
+                            </div>
+                            <a href="#" class="btn btn-light rounded-pill py-3 px-5">Join Now</a>
+                        </div>
+                    </div>
+        
+                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="pricing-item bg-primary rounded text-center p-5 h-100">
+                            <div class="pb-4 border-bottom">
+                                <h2 class="text-dark mb-4">Sibling Package</h2>
+                                <p class="text-white mb-4">Ideal for siblings or small groups looking for a shared membership with added perks.</p>
+                                <h2 class="text-dark mb-0">₹7000<span class="text-white fs-5 fw-normal">/month</span></h2>
+                            </div>
+                            <div class="text-white py-4">
+                                <p class="mb-4"><i class="fa fa-check text-dark me-2"></i>Shared Access for Two</p>
+                                <p class="mb-4"><i class="fa fa-check text-dark me-2"></i>Free Group Fitness Classes</p>
+                                <p class="mb-4"><i class="fa fa-check text-dark me-2"></i>Priority Locker Access</p>
+                                <p class="mb-4"><i class="fa fa-check text-dark me-2"></i>Complimentary Towels for Both</p>
+                                <p class="mb-4"><i class="fa fa-check text-dark me-2"></i>Exclusive Discounts on Events</p>
+                            </div>
+                            <a href="#" class="btn btn-dark rounded-pill py-3 px-5">Join Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Ticket Packages End -->
+
+
+        <!-- Attractions Start -->
+        <div class="container-fluid attractions py-5">
+            <div class="container attractions-section py-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-primary">Gallery</h4>
+                    <h1 class="display-5 text-white mb-4">Explore Raj Swimming class Attractions</h1>
+                    <p class="text-white mb-0">Discover the thrilling attractions and fun activities at Raj Swimming Park. From exciting water slides to relaxing pools, experience it all with your family and friends.
+                    </p>
+                </div>
+                <div class="owl-carousel attractions-carousel wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="attractions-item wow fadeInUp" data-wow-delay="0.2s">
+                        <img src="img/gallery_swimmig/1.png" class="img-fluid rounded w-100" alt="">
+                        <a href="#" class="attractions-name">Gallery</a>
+                    </div>
+                    <div class="attractions-item wow fadeInUp" data-wow-delay="0.4s">
+                        <img src="img/gallery_swimmig/2.png" class="img-fluid rounded w-100" alt="">
+                        <a href="#" class="attractions-name">Gallery</a>
+                    </div>
+                    <div class="attractions-item wow fadeInUp" data-wow-delay="0.6s">
+                        <img src="img/gallery_swimmig/3.png" class="img-fluid rounded w-100" alt="">
+                        <a href="#" class="attractions-name">Gallery</a>
+                    </div>
+                    <div class="attractions-item wow fadeInUp" data-wow-delay="0.8s">
+                        <img src="img/gallery_swimmig/4.png" class="img-fluid rounded w-100" alt="">
+                        <a href="#" class="attractions-name">Gallery</a>
+                    </div>
+                    <div class="attractions-item wow fadeInUp" data-wow-delay="1s">
+                        <img src="img/gallery_swimmig/5.png" class="img-fluid rounded w-100" alt="">
+                        <a href="#" class="attractions-name">Gallery</a>
+                    </div>
+                    <div class="attractions-item wow fadeInUp" data-wow-delay="1s">
+                        <img src="img/gallery_swimmig/6.png" class="img-fluid rounded w-100" alt="">
+                        <a href="#" class="attractions-name">Gallery</a>
+                    </div>
+                    <div class="attractions-item wow fadeInUp" data-wow-delay="1s">
+                        <img src="img/gallery_swimmig/7.png" class="img-fluid rounded w-100" alt="">
+                        <a href="#" class="attractions-name">Gallery</a>
+                    </div>
+                    <div class="attractions-item wow fadeInUp" data-wow-delay="1s">
+                        <img src="img/gallery_swimmig/8.png" class="img-fluid rounded w-100" alt="">
+                        <a href="#" class="attractions-name">Gallery</a>
+                    </div>
+                    <div class="attractions-item wow fadeInUp" data-wow-delay="1s">
+                        <img src="img/gallery_swimmig/9.png" class="img-fluid rounded w-100" alt="">
+                        <a href="#" class="attractions-name">Gallery</a>
+                    </div>
+                    <div class="attractions-item wow fadeInUp" data-wow-delay="1s">
+                        <img src="img/gallery_swimmig/10.png" class="img-fluid rounded w-100" alt="">
+                        <a href="#" class="attractions-name">Gallery</a>
+                    </div>
+                    <div class="attractions-item wow fadeInUp" data-wow-delay="1s">
+                        <img src="img/gallery_swimmig/11.png" class="img-fluid rounded w-100" alt="">
+                        <a href="#" class="attractions-name">Gallery</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Attractions End -->
+
+
+       
+
+        <!-- faq start  -->
+        <div class="container my-5">
+            <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+            
+            <div class="accordion" id="faqAccordion">
+              
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    1. What swimming programs do you offer?
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    We offer personalized one-on-one classes, group classes, summer camps, and private training at your location.
+                  </div>
+                </div>
+              </div>
+          
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    2. What age groups do you train?
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    We train children, teens, and adults of all skill levels, including specialized programs for children with special needs.
+                  </div>
+                </div>
+              </div>
+          
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    3. Do you offer private swimming lessons at home?
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Yes, we provide convenient private swimming lessons at your flat or villa.
+                  </div>
+                </div>
+              </div>
+          
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    4. What safety measures do you follow during classes?
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    We follow strict safety protocols, including lifeguard supervision, proper equipment, and emergency response procedures.
+                  </div>
+                </div>
+              </div>
+          
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    5. What should I bring to my swimming lessons?
+                  </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Please bring a swimsuit, towel, swim cap, and goggles. For children, floatation aids may be recommended.
+                  </div>
+                </div>
+              </div>
+          
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSix">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    6. Do you provide training for children with special needs?
+                  </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Yes, we specialize in teaching children with Autism, ADHD, Cerebral Palsy, and other conditions.
+                  </div>
+                </div>
+              </div>
+          
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSeven">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                    7. How can I enroll in a swimming program?
+                  </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    You can enroll by contacting us through our website, phone, or visiting our location directly.
+                  </div>
+                </div>
+              </div>
+          
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingEight">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                    8. Are your instructors certified?
+                  </button>
+                </h2>
+                <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Yes, all our instructors are certified and have extensive experience in swim coaching and water safety.
+                  </div>
+                </div>
+              </div>
+          
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingNine">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                    9. What is your cancellation policy?
+                  </button>
+                </h2>
+                <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    We require a 24-hour notice for class cancellations or rescheduling.
+                  </div>
+                </div>
+              </div>
+          
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTen">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                    10. Do you offer discounts for group classes?
+                  </button>
+                </h2>
+                <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Yes, we offer special discounts for group bookings and family packages.
+                  </div>
+                </div>
+              </div>
+          
+            </div>
+          </div>
+          
+        <!-- faq end  -->
+
+
+        <!-- Testimonial Start -->
+        <div class="container-fluid testimonial py-5" >
+            <div class="container py-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-primary">Testimonials</h4>
+                    <h1 class="display-5 text-white mb-4">What Our Clients Say</h1>
+                    <p class="text-white mb-0">Hear from our happy swimmers who have experienced the best training and fun-filled swimming sessions at Raj Swimming Classes.</p>
+                </div>
+                
+                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.2s">
+                    
+                    <div class="testimonial-item p-4">
+                        <p class="text-white fs-4 mb-4">"I enrolled my kids in Raj Swimming Classes, and they absolutely loved it! The trainers are professional, and the facilities are excellent. Highly recommended!"</p>
+                        <div class="testimonial-inner d-flex align-items-center">
+                            <div class="testimonial-img">
+                                <img src="./img/reviews/2.png" class="img-fluid rounded-circle" alt="Client Image" style="width: 80px; height: 80px;">
+                                <div class="testimonial-quote btn-lg-square rounded-circle"><i class="fa fa-quote-right fa-2x"></i></div>
+                            </div>
+                            <div class="ms-4">
+                                <h4>Priya</h4>
+                                <div class="d-flex text-warning">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="testimonial-item p-4">
+                        <p class="text-white fs-4 mb-4">"The instructors at Raj Swimming Classes are friendly and skilled. I improved my swimming techniques significantly within a few weeks. Great experience!"</p>
+                        <div class="testimonial-inner d-flex align-items-center">
+                            <div class="testimonial-img">
+                                <img src="./img/reviews/1.png" class="img-fluid rounded-circle" alt="Client Image" style="width: 80px; height: 80px;">
+                                <div class="testimonial-quote btn-lg-square rounded-circle"><i class="fa fa-quote-right fa-2x"></i></div>
+                            </div>
+                            <div class="ms-4">
+                                <h4>Rahul</h4>
+                                <div class="d-flex text-warning">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="testimonial-item p-4">
+                        <p class="text-white fs-4 mb-4">"Raj Swimming Classes helped me overcome my fear of water. The trainers were patient and encouraging. Now, I swim confidently!"</p>
+                        <div class="testimonial-inner d-flex align-items-center">
+                            <div class="testimonial-img">
+                                <img src="./img/reviews/3.png" class="img-fluid rounded-circle" alt="Client Image" style="width: 80px; height: 80px;">
+                                <div class="testimonial-quote btn-lg-square rounded-circle"><i class="fa fa-quote-right fa-2x"></i></div>
+                            </div>
+                            <div class="ms-4">
+                                <h4>Meera</h4>
+                                <div class="d-flex text-warning">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->
+
+        <!-- Footer Start -->
+        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-6 col-xl-4">
+                        <div class="footer-item">
+                            <a href="index.html" class="p-0">
+                                
+                              <img src="img/raj_swimmimg_classes.svg" height="100px"  alt="Logo">
+                            </a>
+                            <p class="mb-2">💙 Join us and make waves with confidence!</p>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-map-marker-alt text-primary me-3"></i>
+                                <p class="text-white mb-0">5/72, East Coast Rd, inside blue lagoon, Raja Nagar, Neelankarai, Chennai, Tamil Nadu 600115</p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="fa fa-phone-alt text-primary me-3"></i>
+                                <p class="text-white mb-0">+91 93453 44416</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-2">
+                        <div class="footer-item">
+                            <h4 class="text-white mb-4">Quick Links</h4>
+                            <a href="index.html"><i class="fas fa-angle-right me-2"></i> Home</a>
+                            <a href="about.html"><i class="fas fa-angle-right me-2"></i> About Us</a>
+                            <a href="Products.html"><i class="fas fa-angle-right me-2"></i> Products</a>
+                            <a href="gallery.html"><i class="fas fa-angle-right me-2"></i> Gallery</a>
+                            <a href="service.html"><i class="fas fa-angle-right me-2"></i> Service</a>
+                            <a href="contact.html"><i class="fas fa-angle-right me-2"></i> Contact us</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-2">
+                        <div class="footer-item">
+                            <h4 class="text-white mb-4">Locate Us</h4>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.7308738514503!2d80.255375!3d12.941211699999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525c973bb48c8d%3A0xd0765edae02140cd!2sRaj%20Swimming%20classes%2FAqua%20therapy%20for%20autism%2C%20autistic%2C%20ADHT%2FHyperactive%20and%20CP%20child!5e1!3m2!1sen!2sin!4v1743179412727!5m2!1sen!2sin" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-4">
+                        <div class="footer-item">
+                            <h4 class="text-white mb-4">Opening Hours</h4>
+                            <div class="opening-date mb-3 pb-3">
+                                <div class="opening-clock flex-shrink-0">
+                                    <h6 class="text-white mb-0 me-auto">Monday - Sunday:</h6>
+                                    <p class="mb-0"><i class="fas fa-clock text-primary me-2"></i> 6:00 AM - 6:30 PM</p>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="text-white mb-2">Payment Accepted</p>
+                                <img src="img/payment.png" class="img-fluid" alt="Image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+        
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-6 text-center text-md-start mb-md-0">
+                        <span class="text-body"><a href="https://rajswimming.com/" class="border-bottom text-white"><i class="fas fa-copyright text-light me-2"></i>Raj Swimming class</a> All right reserved.</span>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end text-body">
+                        
+                        Designed By <a class="border-bottom text-white" href="https://softwaredevelopmentandgraphicdesign.tech/">SDGD</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    </body>
+
 </html>
