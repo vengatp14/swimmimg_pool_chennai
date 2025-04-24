@@ -1054,3 +1054,52 @@
       transform: scale(1);
     }
   }
+
+  /**sticky**/
+  .sticky-buttons {
+    position: fixed;
+    bottom: 100px;
+    right: 32px;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .btn-circle {
+    background-color: #25D366;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    cursor: pointer;
+    position: relative;
+    animation: pulse 2s infinite;
+    transition: transform 0.2s;
+  }
+
+  .btn-circle.call {
+    background-color: #0A66C2;
+  }
+
+  .btn-circle:hover {
+    transform: scale(1.1);
+  }
+
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(0, 255, 0, 0.4);
+    }
+    70% {
+      box-shadow: 0 0 0 15px rgba(0, 255, 0, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(0, 255, 0, 0);
+    }
+  }
