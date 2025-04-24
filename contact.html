@@ -172,47 +172,51 @@
                     <div class="col-xl-6 wow fadeInUp" data-wow-delay="0.4s">
                         <div class="bg-light p-5 rounded h-100">
                             <h4 class="text-primary mb-4">Send Your Message</h4>
-                            <form>
+                            <form action="https://api.web3forms.com/submit" method="POST" id="form">
+                                <input type="hidden" name="access_key" value="57cc32cd-d052-4a32-baa5-0842ac09646a" />
+                                <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+                                <input type="hidden" name="redirect" value="https://web3forms.com/success" />
+                                <input type="checkbox" name="botcheck" id="" style="display: none;" />
                                 <div class="row g-4">
                                     <div class="col-lg-12 col-xl-6">
                                         <div class="form-floating">
-                                            <input type="text" class="form-control border-0" id="name" placeholder="Your Name">
+                                            <input type="text" name="Name" class="form-control border-0" id="name" placeholder="Your Name" required>
                                             <label for="name">Your Name</label>
                                         </div>
                                     </div>
                                     <div class="col-lg-12 col-xl-6">
                                         <div class="form-floating">
-                                            <input type="email" class="form-control border-0" id="email" placeholder="Your Email">
+                                            <input type="email" name="Email" class="form-control border-0" id="email" placeholder="Your Email" required>
                                             <label for="email">Your Email</label>
                                         </div>
                                     </div>
                                     <div class="col-lg-12 col-xl-6">
                                         <div class="form-floating">
-                                            <input type="phone" class="form-control border-0" id="phone" placeholder="Phone">
+                                            <input type="phone" name="Phone" class="form-control border-0" id="phone" placeholder="Phone" required>
                                             <label for="phone">Your Phone</label>
                                         </div>
                                     </div>
                                     <div class="col-lg-12 col-xl-6">
                                         <div class="form-floating">
-                                            <input type="text" class="form-control border-0" id="project" placeholder="No of Students">
+                                            <input type="text" name="No Of Students" class="form-control border-0" id="project" placeholder="No of Students" required>
                                             <label for="project">No of Students</label>
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="form-floating">
-                                            <input type="text" class="form-control border-0" id="subject" placeholder="Subject">
+                                            <input type="text" class="form-control border-0" name="Subject" id="subject" placeholder="Subject" required>
                                             <label for="subject">Subject</label>
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="form-floating">
-                                            <textarea class="form-control border-0" placeholder="Leave a message here" id="message" style="height: 160px"></textarea>
+                                            <textarea class="form-control border-0" name="Message" placeholder="Leave a message here" id="message" style="height: 160px" required></textarea>
                                             <label for="message">Message</label>
                                         </div>
 
                                     </div>
                                     <div class="col-12">
-                                        <button class="btn btn-primary w-100 py-3">Send Message</button>
+                                        <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
                                     </div>
                                 </div>
                             </form>
